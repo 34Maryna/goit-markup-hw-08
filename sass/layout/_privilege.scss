@@ -1,0 +1,32 @@
+.privilege {
+    padding: 94px 0px;
+    }
+    .details {
+    display: flex;
+    column-gap: 30px; 
+    }
+    .details__link {
+    width: 270px;
+    }
+    .details__subtitle {
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--primary-header-color);    
+    margin-bottom: 10px;
+    }
+    .details__text {
+    color: var(--second-color);
+    }
+    .details__icons {
+    @extend %flex-align-justify;
+    width: 270px;
+    height: 120px;
+    background-color: var(--second-bg-color);
+    margin-bottom: 30px;
+    border-radius: 4px;
+    &:not(:last-child) {
+    margin-right: 30px; }
+    &:focus {
+    border-color: var(--accent-color); }
+ }

@@ -1,0 +1,26 @@
+:root {
+    --primary-header-color: #212121;
+    --second-color: #757575;
+    --accent-color: #2196F3;
+    --primary-color: #212121;
+    --primary-text-color: #757575;
+    --bg-color: #FFFFFF;
+    --btn-color: #2196F3;
+    --second-text-color: #FFFFFF; 
+    --second-bg-color: #F5F4FA; 
+    --border-color: #EEEEEE;
+    --second-brdr-color: #AFB1B8; 
+    --second-border-color: #ECECEC;
+    --footer-color: #2F303A;
+    --second-btn-color: #188CE8;
+    --logo-color: #000000;
+    }
+
+    body {
+        font-family: 'Roboto', sans-serif;
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        color: var(--primary-text-color);
+        background-color: var(--bg-color);
+        }
