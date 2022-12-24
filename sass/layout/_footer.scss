@@ -3,16 +3,19 @@ background-color: var(--footer-color);
 padding: 60px 0;
 }
 .footer-container {
-display: flex;  
-align-items: baseline;  
+// display: flex;  
+// align-items: baseline;  
 }
 .footer .logo-container .block-mail-container {
-display: inline-block
+display: inline-block;
 }
 .footer-logo {
 display: inline-block;
 color: var(--bg-color); 
 margin-bottom: 20px;
+}
+.accent {
+ color: var(--accent-color);   
 }
 .address {
 display: block; 
@@ -72,9 +75,9 @@ fill: currentColor;
 margin-left: auto;
 }
 .footer-blok {
-display: flex;
-flex-direction: row;
-justify-content: space-between;
+// display: flex;
+// flex-direction: row;
+// justify-content: space-between;
 width: 570px; 
 }
 .block-mail { 
