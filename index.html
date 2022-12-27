@@ -9,14 +9,31 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!--<link rel="stylesheet" href="./css/style.css">-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g==" crossorigin="anonymous" />
+       <!--<link rel="stylesheet" href="./css/style.css">-->
     <link rel="stylesheet" href="./css/main.min.css">
     </head>
 <!--Шапка сайту-->
 <body>
-   <!-- <header class="header bort">
+   <header class="header bort">
    <div class="container">
    <a href="index.html" class="header__header-logo logo link"><span class="header__accent logo link">Web</span>Studio</a>
+   
+<button type="button" class="header__toggle js-open-menu"
+aria-expanded="false"
+aria-controls="mobile-menu">
+<svg width="40" heigth="40" class="header_item-icon">
+  <use href="./img/icons.svg#icon-menu"></use>
+</svg>
+</button>
+<div class="menu-container js-menu-container" id="mobile-menu">
+<button type="button" class="header__toggle js-close-menu">
+  <svg width="40" heigth="40" class="header_item-icon">
+<use href="./img/icons.svg#icon-close"></use>
+  </svg>
+</button>
+</div>
+
    <nav class="navigation">
       <ul class="navigation__list list">
          <li><a href="" class="navigation__links link navigation__current navigation__cur-h links">Студія</a></li>
@@ -39,7 +56,7 @@
      </ul>
     </div>
     </div>
-    </header>  -->
+    </header> 
 
 <!--Рішення бізнесу--> 
    <main>
@@ -380,8 +397,8 @@
   </form>
   </div>
 </div>
-
    </footer>
-  <script src="./js/modal.js"></script>
+   <script src="./js/modal.js"></script>
+  <script src="./js/mobile-menu.js"></script>
 </body>
 </html>
