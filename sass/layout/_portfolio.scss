@@ -5,9 +5,13 @@ border-bottom: 1px solid var(--second-border-color);
 color: var(--accent-color);    
 }
 .element {
-margin-bottom: 50px;
+margin-bottom: 40px;
 display: flex;  
-justify-content: center;  
+flex-wrap: wrap;
+ @media screen and (min-width: 768px) {
+    justify-content: center; 
+    margin-bottom: 50px;
+ }
 }
 .element__item:not(:last-child) {
 margin-right: 8px;  

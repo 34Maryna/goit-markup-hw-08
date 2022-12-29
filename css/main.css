@@ -77,6 +77,11 @@ ul {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+@media screen and (max-width: 1199px) {
+  .section {
+    padding: 60px 0px;
+  }
+}
 
 .text {
   font-size: 14px;
@@ -236,7 +241,7 @@ body {
 
 .mobile-contacts {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   margin-top: 302px;
   list-style: none;
 }
@@ -267,7 +272,7 @@ body {
   list-style: none;
 }
 
-.mobile-social__item:not(:last-child) {
+.mobile-social__link:not(:last-child) {
   margin-right: 10px;
 }
 
@@ -279,13 +284,17 @@ body {
   color: #2196F3;
 }
 
-.mob-soc-link::after {
+.mobile-social__item {
+  display: flex;
+  align-items: center;
+}
+
+.mobile-social__item:not(:last-child)::after {
   content: "";
   width: 22px;
   height: 0px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   transform: rotate(90deg);
-  margin-left: 10px;
 }
 
 .header__accent {
@@ -1235,9 +1244,15 @@ body {
 }
 
 .element {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 768px) {
+  .element {
+    justify-content: center;
+    margin-bottom: 50px;
+  }
 }
 
 .element__item:not(:last-child) {
