@@ -120,6 +120,7 @@ color: rgba(117, 117, 117, 0.5);  }
 .politic__label {
  display: flex; 
  align-items: center;
+ flex-wrap: wrap;
 @media screen and (min-width: 1200px) {
 display: flex;  
 justify-content: center;
@@ -156,7 +157,8 @@ align-items: center;
 } 
 @media screen and (max-width: 479px) {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-start;
   font-size: 10px;
 }
 }
