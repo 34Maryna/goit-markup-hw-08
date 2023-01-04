@@ -154,6 +154,11 @@ align-items: center;
     font-size: 12px; 
     line-height: 1.16;  
 } 
+@media screen and (max-width: 479px) {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 10px;
+}
 }
 .politic__link {
 text-decoration: underline; 
@@ -161,7 +166,10 @@ color: var(--accent-color);
 @media screen and (max-width: 1199px) {
     font-size: 12px; 
     line-height: 1.16;  
-}  
+} 
+@media screen and (max-width: 479px) {
+  font-size: 10px;
+} 
 }
 .politic__button {
 width: 200px; 

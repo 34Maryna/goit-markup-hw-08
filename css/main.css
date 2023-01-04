@@ -742,6 +742,13 @@ body {
     line-height: 1.16;
   }
 }
+@media screen and (max-width: 479px) {
+  .politic__item {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 10px;
+  }
+}
 
 .politic__link {
   text-decoration: underline;
@@ -751,6 +758,11 @@ body {
   .politic__link {
     font-size: 12px;
     line-height: 1.16;
+  }
+}
+@media screen and (max-width: 479px) {
+  .politic__link {
+    font-size: 10px;
   }
 }
 
