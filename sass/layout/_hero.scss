@@ -4,34 +4,47 @@
     margin-left: auto;
     margin-right: auto;
     padding: 200px 0px;
+
+    @media screen and (min-width: 480px) {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), 
     rgba(47, 48, 58, 0.4)), 
-    url("../img/hero.jpg");
+    url("../img/hero-mob.jpg");
     @include retina {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), 
     rgba(47, 48, 58, 0.4)),
     url("../img/hero-mob-2x.jpg");
+    }
+    }
+
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), 
+    rgba(47, 48, 58, 0.4)), 
+    url("../img/hero-tablet.jpg"); 
+    @include retina {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), 
+      rgba(47, 48, 58, 0.4)),
+      url("../img/hero-tablet-2x.jpg");    
+  }
+  }
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), 
+    rgba(47, 48, 58, 0.4)), 
+    url("../img/hero.jpg"); 
+    @include retina {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), 
+    rgba(47, 48, 58, 0.4)),
+    url("../img/hero-dectop-2x.jpg");    
     }
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-color: var(--primary-color);
     text-align: center;
-    @media screen and (min-width: 768px) {
-        @include retina {
-            background-image: linear-gradient(rgba(47, 48, 58, 0.4), 
-            rgba(47, 48, 58, 0.4)),
-            url("../img/hero-tablet-2x.jpg");    
+    @media screen and (max-width: 1199px) {
+      height: auto;
+      padding: 118px 0px;
     }
-    } 
-    @media screen and (min-width: 1200px) {
-        @include retina {
-            background-image: linear-gradient(rgba(47, 48, 58, 0.4), 
-            rgba(47, 48, 58, 0.4)),
-            url("../img/hero-dectop-2x.jpg");    
-    }
-    }
-}
+    
+  }
     .heading {
     font-weight: 900;
     font-size: 44px;
@@ -42,7 +55,7 @@
     color: var(--second-text-color);
     max-width: 696px; 
     margin: 0px auto;
-    @media screen and (max-width: 1199px) {
+      @media screen and (max-width: 1199px) {
     font-size: 26px;   
     line-height: 1.61; 
     max-width: 360px;
@@ -70,11 +83,4 @@
     &:hover,
     &:focus {
     background-color: var(--second-btn-color);  } 
-}
-@media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .box {
-    background-image: url('photo@2x.png');
-  }
 }
