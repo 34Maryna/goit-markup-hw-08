@@ -45,7 +45,7 @@ height: 40px;
     @media screen and (max-width: 767px) {
     position: fixed;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     top: 0;
     left: 0;
     width: 100vw;
@@ -97,7 +97,7 @@ color: var(--accent-color);
 .mobile-contacts {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 302px;
+    margin-top: auto;
     list-style: none;    
 }
 .mobile-contacts__tel {
@@ -153,7 +153,6 @@ color: #2196F3;
     color:var(--accent-color) ;
 } 
 .navigation {
-    padding: 28px 0; 
 @media screen and (max-width: 767px) {
     display: none;    
 } 
@@ -197,8 +196,9 @@ fill: var(--accent-color);  }
 }    
 }
 .navigation__list .link {
+   display: block;
    padding-top: 32px;   
-    padding-bottom: 32px; 
+   padding-bottom: 32px; 
 }
 .navigation__list > li:not(:last-child){
     margin-right: 50px;    
@@ -226,9 +226,8 @@ display: inline-block;
 color: var(--second-color);
 }
 .contact {
-    display: inline-block;
+display: inline-block;
 margin-left: auto;
-padding: 21px 0px;
 
 @media screen and (max-width: 767px) {
     display: none;    

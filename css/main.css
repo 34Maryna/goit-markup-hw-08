@@ -189,7 +189,7 @@ body {
   .menu-container {
     position: fixed;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     top: 0;
     left: 0;
     width: 100vw;
@@ -246,7 +246,7 @@ body {
 .mobile-contacts {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 302px;
+  margin-top: auto;
   list-style: none;
 }
 
@@ -310,9 +310,6 @@ body {
   color: var(--accent-color);
 }
 
-.navigation {
-  padding: 28px 0;
-}
 @media screen and (max-width: 767px) {
   .navigation {
     display: none;
@@ -365,6 +362,7 @@ body {
 }
 
 .navigation__list .link {
+  display: block;
   padding-top: 32px;
   padding-bottom: 32px;
 }
@@ -401,7 +399,6 @@ body {
 .contact {
   display: inline-block;
   margin-left: auto;
-  padding: 21px 0px;
 }
 @media screen and (max-width: 767px) {
   .contact {
